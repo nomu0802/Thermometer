@@ -2,19 +2,21 @@
 
 LINEのMessagingAPIを使用してRaspberryPiにメッセージを送信し気温と湿度の取得をします。
 
-環境:
-Hard:Raspberry PiZero
+環境: <br>
+Hard:Raspberry PiZero <br>
 Sensor:AM2320
 
-# How Do
-## 1.Messaging APIの作成
-noteにて[LINEのメッセージでRaspberryPIのLEDをON／OFFしてみる](https://note.com/khe00716/n/n34bb4c087fdc)記事があるので
-この記事にそってLINEのMessagingAPIとラズパイの設定をしていきます。
+# 使用方法
+## 1.センサーの取付
+取付を詳しく説明してくださっているサイトがありますのでそこをもとにラズパイにセンサーの取付を行います。([参照](https://note.com/khe00716/n/n34bb4c087fdc))
+
+## 2.Messaging APIの作成
+noteにてMessagingApiとラズパイのサーバーの設定が詳しくのっている記事があります。記事があるので
+この記事にそってLINEのMessagingAPIとラズパイの設定をしていきます。([参照](https://note.com/khe00716/n/n34bb4c087fdc))
 
 app.pyに作成したMessagingAPIのチャネルシークレットとチャネルアクセストークンを設定します。
 
-## 2.センサーの取付
-取付を詳しく説明してくださっているサイトがありますのでそこをもとにラズパイにセンサーの取付を行います。([参照](https://note.com/khe00716/n/n34bb4c087fdc))
+
  
 ## 3.実行
 任意のディレクトリにapp.pyを配置しflask runを実行することでLineのBotとAPIの連携は完了です。
